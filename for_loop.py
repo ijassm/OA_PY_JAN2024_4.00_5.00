@@ -48,3 +48,39 @@ for i in range(length):
 
 print(a)
 print(newString)
+
+# newString = ""
+
+# i = 0
+# a[i] => "o"
+# newString = "" + "o"
+# newString = "o"
+
+# i = 1
+# a[i] => "c"
+# newString = "o" + "c"
+# newString = "oc"
+
+# i = 2
+# a[i] => " "
+# Condition False
+
+# i = 3
+# a[i] => "e"
+# newString = "oc" + "e"
+# newString = "oce"
+
+# i = 4
+# a[i] => "a"
+# newString = "oce" + "a"
+# newString = "ocea"
+
+# i = 5
+# a[i] => " "
+# Condition False
+
+# i = 6
+# a[i] => "n"
+# newString = "ocea" + "n"
+# newString = "ocean"
+
