@@ -119,4 +119,51 @@
 #         print()
 
 
+# 8. Write a python program to display the n terms of odd natural numbers and their sum.
+# Test Data
+# Input number of terms : 10
+# Expected Output :
+# The odd numbers are :1 3 5 7 9 11 13 15 17 19
+# The Sum of odd Natural Number upto 10 terms : 100
+
+# n = int(input("Input number of terms: "))
+
+# s = 0
+# loopEnd = n * 2
+
+# for i in range(1, loopEnd, 2):
+#     s += i
+
+# print(f"The Sum of odd Natural Number upto {n} terms: {s}")
+
+
+# 9. Write a program in python to display a pattern like a right angle triangle using an asterisk.
+
+# The pattern like :
+
+# *
+# **
+# ***
+# ****
+
+# n = 6
+
+# for i in range(1, n):
+#     print("* " * i)
+
+rows = int(input("Enter the number of rows: "))
+loops = (rows * (rows + 1)) // 2
+
+r = 1
+c = 0
+
+for i in range(1, loops + 1):
+    c += 1
+    print("*", end=" ")
+    if r == c:
+        print()
+        r += 1
+        c = 0
+
+
 # website link : https://www.w3resource.com/c-programming-exercises/for-loop/index.php
