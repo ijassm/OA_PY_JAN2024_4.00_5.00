@@ -3,7 +3,7 @@
 
 # [] = > list
 
-even = [2, 4, 6, 8, 10, 12, 12, 12]
+# even = [2, 4, 6, 8, 10, 12, 12, 12]
 
 # accessing index
 # print("positive index values")
@@ -70,3 +70,66 @@ even = [2, 4, 6, 8, 10, 12, 12, 12]
 # print(a)
 
 # https://www.w3schools.com/python/python_ref_list.asp
+
+# l = [2, 4, 1, 3, 5, 6]
+# even = []
+# odd = []
+
+# for i in l:
+#     if i % 2 == 0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+
+# print(even, "even")
+# print(odd, "odd")
+
+l = [2, 41, 85, 22, 12, 35, 5, 6]
+
+length = len(l)
+
+# sorting
+# i = 2
+# 2 > 4 => False [2, 4, 1, 3, 5, 6]
+# 2 > 1 => True [1, 4, 2, 3, 5, 6]
+# 1 > 3 => False [1, 4, 2, 3, 5, 6]
+# 1 > 5 => False [1, 4, 2, 3, 5, 6]
+# 1 > 6 => False [1, 4, 2, 3, 5, 6]
+
+# i = 4
+# 4 > 2 => True [1, 2, 4, 3, 5, 6]
+# 2 > 3 => False [1, 2, 4, 3, 5, 6]
+# 2 > 5 => False [1, 2, 4, 3, 5, 6]
+# 2 > 6 => False [1, 2, 4, 3, 5, 6]
+
+# i = 4
+# 4 > 3 => True [1, 2, 3, 4, 5, 6]
+# 3 > 5 => False [1, 2, 3, 4, 5, 6]
+# 3 > 6 => False [1, 2, 3, 4, 5, 6]
+
+# i = 4
+# 4 > 5 => False [1, 2, 3, 4, 5, 6]
+# 4 > 6 => False [1, 2, 3, 4, 5, 6]
+
+# i = 5
+# 5 > 6 => False [1, 2, 3, 4, 5, 6]
+
+
+# for i in range(length - 1):
+#     for j in range(i + 1, length):
+#         if l[i] > l[j]:
+#             l[i], l[j] = l[j], l[i]
+
+# print(l)
+
+# n = 5
+# arr = [15, 2, 3, 4, 7, 6]
+# length = len(arr)
+# output = []
+
+# for i in range(1, length + 1):
+#     value = arr[i - 1]
+#     if value == i:
+#         output.append(value)
+
+# print(output)
