@@ -133,3 +133,70 @@ length = len(l)
 #         output.append(value)
 
 # print(output)
+
+# Given an integer array arr[] of size n. The task is to find sum of it.
+
+# n = 4
+# output = 0
+# arr = [1, 2, 13, 4]
+
+# for i in arr:
+#     output += i
+
+# print(output)
+
+
+# You are given an array A of size N. You need to print elements of A in alternate order (starting from index 0).
+
+# N = 5
+# a = [1, 2, 3, 4, 8]
+
+# for i in range(N):
+#     if i % 2 == 0:
+#         print(a[i])
+
+
+# Given a Integer array A[] of n elements. Your task is to complete the function PalinArray.
+# Which will return 1 if all the elements of the Array are palindrome otherwise it will return 0.
+
+# a = [111, 222, 333, 444, 15551]
+
+# output = 0
+
+# for i in a:
+#     rev = 0
+#     element = i
+#     while i != 0:
+#         lastDigit = i % 10
+#         rev = rev * 10 + lastDigit
+#         i = i // 10
+#     if rev == element:
+#         output = 1
+#     else:
+#         output = 0
+#         break
+
+
+# print(output)
+
+# output = 0
+
+# for i in a:
+#     rev = str(i)[::-1]
+#     element = str(i)
+#     if rev == element:
+#         output = 1
+#     else:
+#         output = 0
+#         break
+
+
+# print(output)
+
+
+# Given an array Arr of size N, print all its elements.
+
+# arr = [1, 2, 3, 4, 5]
+
+# for i in arr:
+#     print(i, end=" ")
