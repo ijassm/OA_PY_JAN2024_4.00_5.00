@@ -200,3 +200,51 @@ length = len(l)
 
 # for i in arr:
 #     print(i, end=" ")
+
+# Given an unsorted array arr[] of n integers and a key which is present in this array. You need to write a program to find the start index( index where the element is first found from left in the array ) and end index( index where the element is first found from right in the array ).(0 based indexing is used)
+# If the key does not exist in the array then return -1 for both start and end index in this case.
+
+# arr = [1, 5, 3, 4, 5, 5, 6, 8, 5]
+
+# length = len(arr)
+
+# key = 5
+
+# output = [-1, -1]
+
+
+# for i in range(length):
+#     if arr[i] == key:
+#         output[0] = i
+#         break
+
+# for i in range(length - 1, -1, -1):
+#     if arr[i] == key:
+#         output[1] = i
+#         break
+
+# for i in range(length):
+#     if arr[i] == key and output[0] == -1:
+#         output[0] = i
+#     elif key == arr[i]:
+#         output[1] = i
+
+# print(output)
+
+
+# Given an array Arr of size N, swap the Kth element from beginning with Kth element from end.
+
+# n = 8
+# k = 3
+# arr = [21, 12, 23, 44, 45, 56, 11, 17]
+
+# k -= 1
+# startIndex = k
+# endIndex = (len(arr) - 1) - k
+
+# arr[startIndex], arr[endIndex] = arr[endIndex], arr[startIndex]
+
+# print(startIndex)
+# print(endIndex)
+
+# print(arr)
