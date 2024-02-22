@@ -116,17 +116,38 @@
 
 # 6. Create a dictionary by extracting the keys from a given dictionary
 
-sample_dict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
+# sample_dict = {"name": "Kelly", "age": 25, "salary": 8000, "city": "New york"}
 
-# Keys to extract
-keys = ["name", "salary", "city"]
+# # Keys to extract
+# keys = ["name", "salary", "city"]
 
-output = {}
+# output = {}
 
-for key in sample_dict:
-    for i in keys:
-        if key == i:
-            output[key] = sample_dict[key]
-            break
+# for key in sample_dict:
+#     for i in keys:
+#         if key == i:
+#             output[key] = sample_dict[key]
+#             break
 
-print(output)
+# print(output)
+
+# 7. Python – Key with maximum unique values
+# Given a dictionary with a values list, extract the key whose value has the most unique values.
+
+# test_dict = {
+#     "Gfg": [5, 7, 9, 4, 0],
+#     "is": [6, 7, 4, 3, 3, 2, 1, 8],
+#     "the": [6, 7, 4, 3, 3, 2, 1, 8],
+#     "good": [9, 9, 6, 5, 5],
+# }
+
+# maxValue = 0
+# maxKey = []
+
+# for i in test_dict:
+#     if len(set(test_dict[i])) > maxValue:
+#         maxValue = len(set(test_dict[i]))
+#         maxKey.append(i)
+
+# print(maxKey, maxValue)
+# print(test_dict)
