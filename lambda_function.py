@@ -32,12 +32,4 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 #     return i * 3
 
 
-def hof(arr, logicFunc):
-    output = []
-    for i in arr:
-        output.append(logicFunc(i))
-    return output
 
-
-print(hof(arr, lambda i: i * 2))
-print(hof(arr, lambda i: i * 3))
