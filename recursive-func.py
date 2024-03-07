@@ -35,14 +35,14 @@
 # 2. Function which takes a another functions as argument
 
 
-# def hof(name, cbFunc):
-#     return cbFunc() + " " + name
+def hof(name, cbFunc):
+     return cbFunc() + " " + name
 
 
-# def greeting():
-#     return "Hello"
+def greeting():
+     return "Hello"
 
 
-# print(hof("XYZ", greeting))
+print(hof("XYZ", greeting))
 
 
