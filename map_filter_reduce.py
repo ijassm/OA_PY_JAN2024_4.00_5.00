@@ -51,5 +51,5 @@ def myReduce(cbFunc, arr, initialValue=None):
     return initialValue
 
 
-print(myReduce(lambda acc, cv: acc + cv, arr, 10))
-print(myReduce(lambda acc, cv: acc + cv, arr))
+# print(myReduce(lambda acc, cv: acc + cv, arr, 10))
+# print(myReduce(lambda acc, cv: acc + cv, arr))
