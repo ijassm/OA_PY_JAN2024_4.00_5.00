@@ -2,7 +2,10 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 from bson import ObjectId
 
-uri = "mongodb+srv://Ijass:HICr32ALYGYRDUGo@python.lvsvs4f.mongodb.net/?retryWrites=true&w=majority&appName=PYTHON"
+userName = ""
+password = ""
+
+uri = f"mongodb+srv://{userName}:{password}@python.lvsvs4f.mongodb.net/?retryWrites=true&w=majority&appName=PYTHON"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi("1"))
@@ -53,155 +56,155 @@ student = db["Students"]
 
 # insert multiple documents
 
-# data = [
-#     {
-#         "firstName": "Bob",
-#         "lastName": "Smith",
-#         "email": "bob@gmail.com",
-#         "mobileNumber": "+91-9876543210",
-#         "age": 25,
-#         "address": {
-#             "doorNo": 42,
-#             "street": "XYZ Avenue",
-#             "city": "Mumbai",
-#             "state": "Maharashtra",
-#             "country": "India",
-#             "pincode": 400001,
-#         },
-#         "skills": ["C++", "JAVA", "REACT"],
-#     },
-#     {
-#         "firstName": "Charlie",
-#         "lastName": "Brown",
-#         "email": "charlie@gmail.com",
-#         "mobileNumber": "+91-1122334455",
-#         "age": 22,
-#         "address": {
-#             "doorNo": 78,
-#             "street": "DEF Lane",
-#             "city": "Bengaluru",
-#             "state": "Karnataka",
-#             "country": "India",
-#             "pincode": 560001,
-#         },
-#         "skills": ["PYTHON", "ANGULAR", "NODEJS"],
-#     },
-#     {
-#         "firstName": "Diana",
-#         "lastName": "Prince",
-#         "email": "diana@gmail.com",
-#         "mobileNumber": "+91-5566778899",
-#         "age": 28,
-#         "address": {
-#             "doorNo": 3,
-#             "street": "GHI Street",
-#             "city": "Hyderabad",
-#             "state": "Telangana",
-#             "country": "India",
-#             "pincode": 500001,
-#         },
-#         "skills": ["JAVA", "SPRING", "MYSQL"],
-#     },
-#     {
-#         "firstName": "Eve",
-#         "lastName": "Adams",
-#         "email": "eve@gmail.com",
-#         "mobileNumber": "+91-9988776655",
-#         "age": 30,
-#         "address": {
-#             "doorNo": 88,
-#             "street": "JKL Boulevard",
-#             "city": "Delhi",
-#             "state": "Delhi",
-#             "country": "India",
-#             "pincode": 110001,
-#         },
-#         "skills": ["HTML", "CSS", "JAVASCRIPT"],
-#     },
-#     {
-#         "firstName": "Frank",
-#         "lastName": "Wright",
-#         "email": "frank@gmail.com",
-#         "mobileNumber": "+91-5544332211",
-#         "age": 27,
-#         "address": {
-#             "doorNo": 54,
-#             "street": "MNO Road",
-#             "city": "Kolkata",
-#             "state": "West Bengal",
-#             "country": "India",
-#             "pincode": 700001,
-#         },
-#         "skills": ["PYTHON", "DJANGO", "POSTGRESQL"],
-#     },
-#     {
-#         "firstName": "Grace",
-#         "lastName": "Hopper",
-#         "email": "grace@gmail.com",
-#         "mobileNumber": "+91-6677889900",
-#         "age": 32,
-#         "address": {
-#             "doorNo": 23,
-#             "street": "PQR Street",
-#             "city": "Pune",
-#             "state": "Maharashtra",
-#             "country": "India",
-#             "pincode": 411001,
-#         },
-#         "skills": ["JAVA", "KOTLIN", "ANDROID"],
-#     },
-#     {
-#         "firstName": "Henry",
-#         "lastName": "Ford",
-#         "email": "henry@gmail.com",
-#         "mobileNumber": "+91-4433221100",
-#         "age": 29,
-#         "address": {
-#             "doorNo": 67,
-#             "street": "STU Avenue",
-#             "city": "Ahmedabad",
-#             "state": "Gujarat",
-#             "country": "India",
-#             "pincode": 380001,
-#         },
-#         "skills": ["REACT", "NODEJS", "MONGODB"],
-#     },
-#     {
-#         "firstName": "Ivy",
-#         "lastName": "Green",
-#         "email": "ivy@gmail.com",
-#         "mobileNumber": "+91-1234432100",
-#         "age": 24,
-#         "address": {
-#             "doorNo": 90,
-#             "street": "VWX Street",
-#             "city": "Chandigarh",
-#             "state": "Chandigarh",
-#             "country": "India",
-#             "pincode": 160001,
-#         },
-#         "skills": ["RUBY", "RAILS", "JAVASCRIPT"],
-#     },
-#     {
-#         "firstName": "Jack",
-#         "lastName": "Ryan",
-#         "email": "jack@gmail.com",
-#         "mobileNumber": "+91-2233445566",
-#         "age": 26,
-#         "address": {
-#             "doorNo": 101,
-#             "street": "YZA Boulevard",
-#             "city": "Jaipur",
-#             "state": "Rajasthan",
-#             "country": "India",
-#             "pincode": 302001,
-#         },
-#         "skills": ["GO", "PYTHON", "KUBERNETES"],
-#     },
-# ]
+data = [
+    {
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "email": "bob@gmail.com",
+        "mobileNumber": "+91-9876543210",
+        "age": 25,
+        "address": {
+            "doorNo": 42,
+            "street": "XYZ Avenue",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "India",
+            "pincode": 400001,
+        },
+        "skills": ["C++", "JAVA", "REACT"],
+    },
+    {
+        "firstName": "Charlie",
+        "lastName": "Brown",
+        "email": "charlie@gmail.com",
+        "mobileNumber": "+91-1122334455",
+        "age": 22,
+        "address": {
+            "doorNo": 78,
+            "street": "DEF Lane",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "India",
+            "pincode": 560001,
+        },
+        "skills": ["PYTHON", "ANGULAR", "NODEJS"],
+    },
+    {
+        "firstName": "Diana",
+        "lastName": "Prince",
+        "email": "diana@gmail.com",
+        "mobileNumber": "+91-5566778899",
+        "age": 28,
+        "address": {
+            "doorNo": 3,
+            "street": "GHI Street",
+            "city": "Hyderabad",
+            "state": "Telangana",
+            "country": "India",
+            "pincode": 500001,
+        },
+        "skills": ["JAVA", "SPRING", "MYSQL"],
+    },
+    {
+        "firstName": "Eve",
+        "lastName": "Adams",
+        "email": "eve@gmail.com",
+        "mobileNumber": "+91-9988776655",
+        "age": 30,
+        "address": {
+            "doorNo": 88,
+            "street": "JKL Boulevard",
+            "city": "Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "pincode": 110001,
+        },
+        "skills": ["HTML", "CSS", "JAVASCRIPT"],
+    },
+    {
+        "firstName": "Frank",
+        "lastName": "Wright",
+        "email": "frank@gmail.com",
+        "mobileNumber": "+91-5544332211",
+        "age": 27,
+        "address": {
+            "doorNo": 54,
+            "street": "MNO Road",
+            "city": "Kolkata",
+            "state": "West Bengal",
+            "country": "India",
+            "pincode": 700001,
+        },
+        "skills": ["PYTHON", "DJANGO", "POSTGRESQL"],
+    },
+    {
+        "firstName": "Grace",
+        "lastName": "Hopper",
+        "email": "grace@gmail.com",
+        "mobileNumber": "+91-6677889900",
+        "age": 32,
+        "address": {
+            "doorNo": 23,
+            "street": "PQR Street",
+            "city": "Pune",
+            "state": "Maharashtra",
+            "country": "India",
+            "pincode": 411001,
+        },
+        "skills": ["JAVA", "KOTLIN", "ANDROID"],
+    },
+    {
+        "firstName": "Henry",
+        "lastName": "Ford",
+        "email": "henry@gmail.com",
+        "mobileNumber": "+91-4433221100",
+        "age": 29,
+        "address": {
+            "doorNo": 67,
+            "street": "STU Avenue",
+            "city": "Ahmedabad",
+            "state": "Gujarat",
+            "country": "India",
+            "pincode": 380001,
+        },
+        "skills": ["REACT", "NODEJS", "MONGODB"],
+    },
+    {
+        "firstName": "Ivy",
+        "lastName": "Green",
+        "email": "ivy@gmail.com",
+        "mobileNumber": "+91-1234432100",
+        "age": 24,
+        "address": {
+            "doorNo": 90,
+            "street": "VWX Street",
+            "city": "Chandigarh",
+            "state": "Chandigarh",
+            "country": "India",
+            "pincode": 160001,
+        },
+        "skills": ["RUBY", "RAILS", "JAVASCRIPT"],
+    },
+    {
+        "firstName": "Jack",
+        "lastName": "Ryan",
+        "email": "jack@gmail.com",
+        "mobileNumber": "+91-2233445566",
+        "age": 26,
+        "address": {
+            "doorNo": 101,
+            "street": "YZA Boulevard",
+            "city": "Jaipur",
+            "state": "Rajasthan",
+            "country": "India",
+            "pincode": 302001,
+        },
+        "skills": ["GO", "PYTHON", "KUBERNETES"],
+    },
+]
 
 
-# student.insert_many(data)
+student.insert_many(data)
 
 # find all documents
 
@@ -209,10 +212,40 @@ student = db["Students"]
 
 # find one document
 
-filter = {"_id": ObjectId("664dd6b7dc52703dddddc369")}
+# query = {"_id": ObjectId("664dd6b7dc52703dddddc369")}
 
-result = student.find_one(filter)
+# result = student.find_one(query, {"_id": 0, "firstName": 1, "lastName": 1})
+# fullName = result["firstName"] + " " + result["lastName"]
 
-print(result["firstName"])
-print(result["lastName"])
-print(result["address"])
+# print(result["firstName"])
+# print(result["lastName"])
+# print(result["address"])
+
+# print(result)
+# print(fullName)
+
+# Update 🎈
+
+# query = {"_id": ObjectId("664dd6b7dc52703dddddc369")}
+# updateValue = {"$set": {"age": 20}}
+
+# student.update_one(query, updateValue)
+
+# query = {"age": 20}
+# updateValue = {"$set": {"age": 25}}
+
+# student.update_many(query, updateValue)
+
+# Delete 🎈
+
+# query = {"_id": ObjectId("664dd6b7dc52703dddddc369")}
+
+# student.delete_one(query)
+
+# query = {"age": 25}
+
+# student.delete_many(query)
+
+# student.delete_many({})
+
+# student.drop()
